@@ -1,4 +1,4 @@
-import { Table, Row, Col, Tooltip, User, Text } from "@nextui-org/react";
+import { Table, Row, Col, Tooltip, User, Text, Container } from "@nextui-org/react";
 import { useState } from 'react'
 import { StyledBadge } from "@/components/admin/icons/StyledBadge";
 import { IconButton } from "@/components/admin/icons/IconButton";
@@ -100,36 +100,7 @@ const PaginatedTable = () => {
           avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
           email: "kristen.cooper@example.com",
         },
-        {
-          id: 8,
-          name: "Kristen Copper",
-          role: "Sales Manager",
-          team: "Sales",
-          status: "active",
-          age: "24",
-          avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
-          email: "kristen.cooper@example.com",
-        },
-        {
-          id: 9,
-          name: "William Howard",
-          role: "Community Manager",
-          team: "Marketing",
-          status: "vacation",
-          age: "28",
-          avatar: "https://i.pravatar.cc/150?u=a048581f4e29026701d",
-          email: "william.howard@example.com",
-        },
-        {
-          id: 10,
-          name: "Kristen Copper",
-          role: "Sales Manager",
-          team: "Sales",
-          status: "active",
-          age: "24",
-          avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
-          email: "kristen.cooper@example.com",
-        },
+  
       ];
       const renderCell = (user, columnKey) => {
         const cellValue = user[columnKey];
@@ -195,53 +166,54 @@ const PaginatedTable = () => {
     return ( 
       <>
           <PopupModal visible={visible} closeHandler={closeHandler} />
-          <Table 
-          headerLined
-          shadow={false}
-          aria-label={"recently added users"}
-          sticked={true}
-   
-       
-          css={{
-            height: "auto",
-            minWidth: "auto",
-            borderRadius:"$10",
-
-          }}
-
-     
-          selectionMode="none"
-        >
+          
+            <Table 
+            headerLined
+            shadow={false}
+            aria-label={"recently added users"}
+            sticked={true}
+            css={{
+              height: "auto",
+              minWidth: "auto",
+            
+            }}
+            containerCss={{
+              borderRadius: "8px",
+              padding:"8px",
+            }}
+            selectionMode="none"
+          >
+        
+            <Table.Header columns={columns}>
+              {(column) => (
+                <Table.Column
+                  key={column.uid}
+                  hideHeader={column.uid === "actions"}
+                  align={column.uid === "actions" ? "center" : "start"}
+                >
+                  {column.name}
+                </Table.Column>
+              )}
+            </Table.Header>
+            <Table.Body items={users}>
+              {(item) => (
+                <Table.Row>
+                  {(columnKey) => (
+                    <Table.Cell>{renderCell(item, columnKey)}</Table.Cell>
+                  )}
+                </Table.Row>
+              )}
+            </Table.Body>
       
-          <Table.Header columns={columns}>
-            {(column) => (
-              <Table.Column
-                key={column.uid}
-                hideHeader={column.uid === "actions"}
-                align={column.uid === "actions" ? "center" : "start"}
-              >
-                {column.name}
-              </Table.Column>
-            )}
-          </Table.Header>
-          <Table.Body items={users}>
-            {(item) => (
-              <Table.Row>
-                {(columnKey) => (
-                  <Table.Cell>{renderCell(item, columnKey)}</Table.Cell>
-                )}
-              </Table.Row>
-            )}
-          </Table.Body>
-    
-          <Table.Pagination
-            noMargin
-            align="center"
-            rowsPerPage={7}
-            total={10}
-            onPageChange={(page) => console.log({ page })}
-          />
-        </Table>
+            <Table.Pagination
+              noMargin
+              align="center"
+              rowsPerPage={7}
+              total={10}
+              onPageChange={(page) => console.log({ page })}
+            />
+            </Table>
+         
       </>
      );
 }
