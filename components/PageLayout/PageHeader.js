@@ -22,13 +22,13 @@ const PageHeader = () => {
             currentPage ="Location List"
             break;
 
-        case "/":
+        case "/user":
             currentPage ="Home"
             break;
-        case "/orderRequest":
+        case "/user/orderRequest":
             currentPage ="Order Requests"
             break;
-        case "/myItemes":
+        case "/user/myItemes":
             currentPage ="My Items"
             break;
         case "/":
