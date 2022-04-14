@@ -1,17 +1,17 @@
 import PaginatedTable from "@/components/admin/items/PaginatedTable";
 import PopupModal from "@/components/admin/items/PopupModal";
 
-export default function orderRequest() {
+export default function myItemes() {
 
   return (
    
     <>
     <div className="my-8 w-full">
-        <button className="primary-btn"> Create Order Request</button>
+        <button className="primary-btn"> Create Moving Request</button>
     </div>
     
     <div className=" rounded-lg">
-        <h2>Order Requests</h2>
+        <h2>My Items</h2>
         <PaginatedTable /> 
         <PopupModal />
     </div>

@@ -1,8 +1,45 @@
 import { useRouter } from 'next/router'
 const PageHeader = () => {
     const router = useRouter()
+    let currentPage;
+    // let currentPage = (router.pathname=="/")?"Home":
+    //                     (router.pathname=="/admin/userList")?"Users List":
+    //                         (router.pathname=="/admin/departmentList")?"Department List":
+    //                             (router.pathname=="/admin/locationList")?"Location List":"Account Setting"
 
-    let currentPage = (router.pathname=="/")?"Home":(router.pathname=="/userList")?"Users List":(router.pathname=="/departmentList")?"Department List":(router.pathname=="/locationList")?"Location List":"Account Setting"
+    switch (router.pathname) {
+        case "/":
+            currentPage ="Home"
+            break;
+
+        case "/admin/userList":
+            currentPage ="Users List"
+            break;
+        case "/admin/departmentList":
+            currentPage ="Department List"
+            break;
+        case "/admin/locationList":
+            currentPage ="Location List"
+            break;
+
+        case "/":
+            currentPage ="Home"
+            break;
+        case "/orderRequest":
+            currentPage ="Order Requests"
+            break;
+        case "/myItemes":
+            currentPage ="My Items"
+            break;
+        case "/":
+            currentPage ="Home"
+            break;
+    
+        default:
+            currentPage ="Account Setting"
+            break;
+    }
+    
     return ( 
         <div className="bg-gray-100  text-gray-700 rounded-lg px-5 py-2 flex justify-between items-center mb-4">
             <h1 className="text-xl font-bold">Dashboard / <span className='font-normal'> {currentPage}</span></h1>

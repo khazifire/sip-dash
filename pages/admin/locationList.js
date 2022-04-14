@@ -15,7 +15,7 @@ export default function locationList() {
 
        </div>
       <div className="">
-        {/* <h2 className="text-xl p-1 py-2 text-gray-700">List of Users</h2> */}
+        {/* <h2>List of Users</h2> */}
           <PaginatedTable /> 
           <PopupModal />
         </div>
