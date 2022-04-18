@@ -12,6 +12,10 @@ const PageHeader = () => {
             currentPage ="Home"
             break;
 
+        case "/admin":
+            currentPage ="Admin"
+            break;
+
         case "/admin/userList":
             currentPage ="Users List"
             break;
@@ -21,6 +25,7 @@ const PageHeader = () => {
         case "/admin/locationList":
             currentPage ="Location List"
             break;
+        
 
         case "/user":
             currentPage ="Home"
@@ -34,6 +39,24 @@ const PageHeader = () => {
         case "/":
             currentPage ="Home"
             break;
+
+        case "/department":
+            currentPage ="Home"
+            break;
+        case "/department/orderRequest":
+            currentPage ="Order Requests"
+            break;
+        case "/department/movingRequest":
+            currentPage = "Moving Requests"
+            break;
+        case "/department/purchaseHistory":
+            currentPage ="Purchase History"
+            break;
+
+        case "/department/myItems":
+            currentPage ="My Items"
+            break;
+
     
         default:
             currentPage ="Account Setting"
