@@ -2,11 +2,11 @@ const SearchBox = () => {
 
     return ( 
         <div className="w-full lg:w-1/3">
-             <div class=" relative text-gray-600 ">
-                <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none w-full" 
+             <div className=" relative text-gray-600 ">
+                <input className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none w-full" 
                   type="search" name="search" placeholder="Search for user" />
-                <button type="submit" class=" absolute right-0 top-0 mt-[13.5px] mr-4">
-                  <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                <button type="submit" className=" absolute right-0 top-0 mt-[13.5px] mr-4">
+                  <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                     viewBox="0 0 56.966 56.966"  xmlSpace="preserve"
                     width="512px" height="512px">
