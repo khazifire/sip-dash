@@ -10,12 +10,11 @@ export default function Home() {
     <>
       <div>
           <StatsPurchasing />
-
       </div>
-      <div className="my-8 flex flex-row gap-6 w-full">
+      {/* <div className="my-8 flex flex-row gap-6 w-full">
         <button className="primary-btn"> Create Order Request</button>
         <button className="primary-btn"> Create Moving Request</button>
-      </div>
+      </div> */}
 
       <div className="flex flex-col lg:flex-row justify-between gap-8">
         <div className=" lg:w-2/3 rounded-lg ">
@@ -35,7 +34,7 @@ export default function Home() {
           
 
           {/* to fix */}
-          <div className="flex flex-col p-6 bg-gray-900 rounded-lg gap-y-6">
+          {/* <div className="flex flex-col p-6 bg-gray-900 rounded-lg gap-y-6">
             <div className="flex justify-between items-center">
               <h2 className="text-xl font-semibold leading-loose text-white">Most type of order</h2>
               <button className="flex gap-x-2.5 py-3 px-4 rounded-lg border border-gray-700">
@@ -71,7 +70,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

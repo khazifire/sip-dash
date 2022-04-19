@@ -7,7 +7,7 @@ export default function myItems() {
   return (
     <div>
        <div className="flex flex-row gap-8 my-6 ">
-       <button className="primary-btn">Add New Items</button>
+       <button className="primary-btn">Create Order Request</button>
       <SearchBox />
       
        </div>

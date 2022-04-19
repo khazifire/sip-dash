@@ -18,7 +18,17 @@ They need to be to integrated with backend + a few modifications and the models 
    - [x] my items:
    - [] Account Settings
 ### department pages:
-   - [x] side nav bar created
-### Finance pages: not started
+   - [x] dash
+   - [x] order request:
+   - [x] moving request:
+   - [x] purchase request:
+   - [x] my items:
+   - [] Account Settings
 ### Purchasing pages: not started
+   - [x] dash
+   - [x] order request:
+   - [] purchase history:
+   - [] my items:
+   - [] Account Settings
+### Finance pages: not started
 ### Inventory pages: not started

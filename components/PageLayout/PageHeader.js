@@ -56,6 +56,20 @@ const PageHeader = () => {
         case "/department/myItems":
             currentPage ="My Items"
             break;
+        
+        case "/purchasing":
+            currentPage ="Home"
+            break;
+        case "/purchasing/orderRequest":
+            currentPage ="Order Requests"
+            break;
+        case "/purchasing/purchaseHistory":
+            currentPage ="Purchase History"
+            break;
+
+        case "/purchasing/myItems":
+            currentPage ="My Items"
+            break;
 
     
         default:

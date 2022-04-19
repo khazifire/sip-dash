@@ -8,8 +8,8 @@ export default function purchaseHistory() {
     <div>
        <div className="flex flex-row gap-4 md:gap-8 my-6 items-center justify-between flex-wrap ">
       <SearchBox />
-        <div>
-          <p className="font-semibold text-xl p-2 px-4 bg-green-300"> Budget (baht): <span className="font-normal">500/10000</span></p>
+        <div className="rounded-lg px-4 py-2 bg-green-300">
+          <p className="font-semibold text-xl "> Budget (baht): <span className="font-normal">100/10000</span></p>
         </div>
        </div>
       <div className="">
