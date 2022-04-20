@@ -3,75 +3,72 @@ const PageHeader = () => {
     const router = useRouter()
     let currentPage;
     // let currentPage = (router.pathname=="/")?"Home":
-    //                     (router.pathname=="/admin/userList")?"Users List":
-    //                         (router.pathname=="/admin/departmentList")?"Department List":
-    //                             (router.pathname=="/admin/locationList")?"Location List":"Account Setting"
+    //                     (router.pathname=="/user/admin/customerList")?"Users List":
+    //                         (router.pathname=="/user/admin/departmentList")?"Department List":
+    //                             (router.pathname=="/user/admin/locationList")?"Location List":"Account Setting"
 
     switch (router.pathname) {
-        case "/":
+        case "/user/":
             currentPage ="Home"
             break;
 
-        case "/admin":
+        case "/user/admin":
             currentPage ="Admin"
             break;
-
-        case "/admin/userList":
+        case "/user/admin/customerList":
             currentPage ="Users List"
             break;
-        case "/admin/departmentList":
+        case "/user/admin/departmentList":
             currentPage ="Department List"
             break;
-        case "/admin/locationList":
+        case "/user/admin/locationList":
             currentPage ="Location List"
             break;
         
 
-        case "/user":
+        case "/user/customer":
             currentPage ="Home"
             break;
-        case "/user/orderRequest":
+        case "/user/customer/orderRequest":
             currentPage ="Order Requests"
             break;
-        case "/user/myItemes":
+        case "/user/customer/myItemes":
             currentPage ="My Items"
             break;
-        case "/":
-            currentPage ="Home"
-            break;
+       
 
-        case "/department":
+        case "/user/department":
             currentPage ="Home"
             break;
-        case "/department/orderRequest":
+        case "/user/department/orderRequest":
             currentPage ="Order Requests"
             break;
-        case "/department/movingRequest":
+        case "/user/department/movingRequest":
             currentPage = "Moving Requests"
             break;
-        case "/department/purchaseHistory":
+        case "/user/department/purchaseHistory":
             currentPage ="Purchase History"
             break;
-
-        case "/department/myItems":
+        case "/user/department/myItems":
             currentPage ="My Items"
             break;
         
-        case "/purchasing":
+
+        case "/user/purchasing":
             currentPage ="Home"
             break;
-        case "/purchasing/orderRequest":
+        case "/user/purchasing/orderRequest":
             currentPage ="Order Requests"
             break;
-        case "/purchasing/purchaseHistory":
+        case "/user/purchasing/purchaseHistory":
             currentPage ="Purchase History"
             break;
 
-        case "/purchasing/myItems":
+        case "/user/purchasing/myItems":
             currentPage ="My Items"
             break;
 
-    
+
         default:
             currentPage ="Account Setting"
             break;

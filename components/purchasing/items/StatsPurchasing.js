@@ -6,7 +6,7 @@ const StatsPurchasing = () =>{
 
         <div className="flex flex-wrap justify-center md:justify-start md:flex-row lg:flex-nowrap gap-6">
 
-          <div className="flex flex-wrap lg:flex-row justify-between p-4  w-full lg:w-1/3  rounded-lg gap-y-3 text-black-700 border-2 border-gray-200 ">
+          <div className="flex flex-wrap lg:flex-row justify-between p-4  w-full lg:w-1/4  rounded-lg gap-y-3 text-black-700 border-2 border-gray-200 ">
                 <div>
                   <div className="flex items-center gap-2 ">
                       <div className="p-2 bg-gray-100 rounded-2xl ">
@@ -22,7 +22,7 @@ const StatsPurchasing = () =>{
                 </div>
             </div>
 
-            <div className="flex flex-wrap lg:flex-row justify-between p-4  w-full lg:w-1/3  rounded-lg gap-y-3 text-black-700 border-2 border-gray-200 ">
+            <div className="flex flex-wrap lg:flex-row justify-between p-4  w-full lg:w-1/4  rounded-lg gap-y-3 text-black-700 border-2 border-gray-200 ">
                 <div>
                   <div className="flex items-center gap-2 ">
                       <div className="p-2 bg-gray-100 rounded-2xl ">

@@ -6,7 +6,7 @@ export default function orderRequest() {
   return (
    
     <>
-    <div className="my-8 w-full">
+    <div className="w-full">
         <div className="flex flex-wrap lg:flex-row justify-between p-4  w-full lg:w-1/3  rounded-lg gap-y-3 text-black-700 border-2 border-gray-200 ">
             <div className="">
               <div className="flex items-center gap-2 ">
@@ -30,7 +30,7 @@ export default function orderRequest() {
         </div>
     </div>
     
-    <div className=" rounded-lg">
+    <div className="rounded-lg mt-4">
         <h2>Pending Order Requests</h2>
         <PaginatedTable /> 
         <PopupModal />
