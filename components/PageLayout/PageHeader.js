@@ -2,10 +2,6 @@ import { useRouter } from 'next/router'
 const PageHeader = () => {
     const router = useRouter()
     let currentPage;
-    // let currentPage = (router.pathname=="/")?"Home":
-    //                     (router.pathname=="/user/admin/customerList")?"Users List":
-    //                         (router.pathname=="/user/admin/departmentList")?"Department List":
-    //                             (router.pathname=="/user/admin/locationList")?"Location List":"Account Setting"
 
     switch (router.pathname) {
         case "/user/":

@@ -146,17 +146,6 @@ const PaginatedTable = () => {
                     </IconButton>
                   </Tooltip>
                 </Col>
-                <Col css={{ d: "flex" }}>
-                  <Tooltip
-                    content="Delete user"
-                    color="error"
-                    onClick={() => console.log("Delete user", user.id)}
-                  >
-                    <IconButton>
-                      <DeleteIcon size={20} fill="#FF0080" />
-                    </IconButton>
-                  </Tooltip>
-                </Col>
               </Row>
             );
           default:
